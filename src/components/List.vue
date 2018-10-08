@@ -11,6 +11,7 @@
         <span
           v-for="tag in project.lang"
           v-bind:key="tag"
+          v-bind:class="tag"
         >
           <p>{{tag}}</p>
         </span>
@@ -33,22 +34,68 @@ export default {
 </script>
 
 <style lang="scss">
+.list {
+  padding: 20px;
+}
+
 .project {
-  width: 30%;
+  width: 30.8%;
   background-color: #f9f5ef;
-  min-height: 150px;
+  min-height: 180px;
   border-radius: 10px;
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
-  color: #3d68a3;
+  color: #091123;
+  transition: .25s ease;
+}
+
+.project:hover {
+  background-color: #f9f5efc9;
+  cursor: pointer;
 }
 
 .list, .tag {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.tag {
+
+  span {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+
+    p {
+      margin: 5px;
+      color: white;
+    }
+  }
+
+  .js {
+    background-color: #FFA646;
+  }
+
+  .c {
+    background-color: #555555;
+  }
+
+  .java {
+    background-color: #b07219;
+  }
+
+  .markdown {
+    background-color: #1a64c6
+  }
+
+  .android {
+    background-color: #A4C639;
+  }
 }
 </style>

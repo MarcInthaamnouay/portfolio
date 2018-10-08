@@ -21,15 +21,16 @@
   {
     "name": "Your Name",
     "type": "school",
-    "description": "Developping a full tv series android application that can be used online as well as offline.",
+    "description": "Developping a tv series consulting Android app that can be used either online or offline.",
     "link": "https://github.com/Tinwork/YourName",
     "languages": [
-      "java"
+      "java",
+      "android"
     ],
     "misc": [
-      "android",
       "realm",
-      "dagger"
+      "dagger",
+      "native"
     ]
   },
   {

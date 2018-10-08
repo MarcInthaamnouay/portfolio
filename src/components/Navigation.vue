@@ -16,6 +16,7 @@ export default {
 <style lang="scss">
   .navigation {
     display: flex;
+    padding: 20px;
     
     .name {
       flex-grow: 1;
@@ -29,7 +30,7 @@ export default {
         width: 50px;
         height: 2px;
         display: block;
-        background-color: white;
+        background-color:rgba(17, 158, 239, 0.3);
         transition: width ease .25s
       }
     }
@@ -40,12 +41,12 @@ export default {
         width: 180px;
         height: 2px;
         display: block;
-        background-color: white;
+        background-color: rgba(17, 158, 239, 0.3);
       }
     }
 
     a {
-      color: white;
+      color: #091123;
       font-weight: 500;
       text-decoration: none;
       font-size: 1.15em;

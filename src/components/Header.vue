@@ -19,15 +19,18 @@ export default {
 
 <style lang="scss">
   .header {
-    height: 100vh;
+    height: 100%;
 
     .content {
       width: 40%;
       margin: 0 auto;
-      margin-top: 33vh;
+      padding-top: 15%;
 
       p {
+        color: #091123;
         font-size: 1.85em;
+        margin-bottom: 0px;
+        margin-top: 0px;
       }
 
       #title {
@@ -38,6 +41,11 @@ export default {
     .arrow {
       margin: 0 auto;
       width: 20px;
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      color: #091123;
 
       svg {
         font-size: 2em;

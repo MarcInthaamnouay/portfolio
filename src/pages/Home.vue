@@ -1,8 +1,12 @@
 <template>
   <div class="home wrapper">
-    <Header />
-    <h2>Recent works</h2>
-    <List />
+    <div class="animation">
+      <Header />
+    </div>
+    <div class="project-wrapper">
+      <h2>Recent works</h2>
+      <List />
+    </div>
   </div>
 </template>
 
@@ -22,7 +26,26 @@ export default {
 <style lang="scss">
   body {
     font-family: 'Raleway', sans-serif;
-    background-color: rgba(48, 94, 156, 0.8);
+    background-color: #f1f1f1;
     color: white;
+  }
+
+  .animation {
+    height: calc(100vh - 63px);
+  }
+
+  .project-wrapper {
+    background-color: #c2c2c2;
+    height: 100vh;
+
+    h2 {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      margin-bottom: 0px;
+      color: #091123;
+      font-weight: 500;
+    }
   }
 </style>
