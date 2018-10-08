@@ -6,8 +6,8 @@ import Project from '../pages/Project.vue'
 import Home from '../pages/Home.vue'
 
 const routes = [
-  { path: '/about', component: About },
-  { path: '/project/:id', component: Project },
+  { path: '/about', component: About },
+  { path: '/project/:id', component: Project },
   { path: '/', component: Home }
 ]
 

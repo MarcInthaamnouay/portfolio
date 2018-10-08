@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Lypuppies",
     "type": "personnal",
     "description": "A simple library which is code in C for nodeJS.",
@@ -10,6 +11,7 @@
     ]
   },
   {
+    "id": 2,
     "name": "Lymui",
     "type": "personnal",
     "description": "A C library which can help you to convert a type of color to an other.",
@@ -19,6 +21,7 @@
     ]
   },
   {
+    "id": 3,
     "name": "Your Name",
     "type": "school",
     "description": "Developping a tv series consulting Android app that can be used either online or offline.",
@@ -34,6 +37,7 @@
     ]
   },
   {
+    "id": 4,
     "name": "Store locator",
     "type": "school",
     "description": "A simple react app using redux to get the information of the store present within a magento store",
@@ -48,6 +52,7 @@
     ]
   },
   {
+    "id": 5,
     "name": "JS articles",
     "type": "work",
     "description": "Articles regarding the JavaScript language writen for helping to understand the language in depth",

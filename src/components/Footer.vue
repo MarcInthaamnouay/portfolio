@@ -1,9 +1,16 @@
 <template>
   <div class="footer">
-    <div id="message">
-      <h3>Wanna keep in touch with me ? You can contact me at <a v-bind:href="'mailto:' + mail">marc.inthaamnouay@gmail.com</a></h3>      
+    <div class="footer-wrapper">
+      <div id="message">
+        <h3>Wanna keep in touch with me ? You can contact me at <a v-bind:href="'mailto:' + mail">marc.inthaamnouay@gmail.com</a></h3>      
+      </div>
+      <div id="github">
+        <a href="https://github.com/MarcInthaamnouay">
+          <font-awesome-icon :icon="['fab', 'github-alt']" />
+        </a>
+      </div>  
     </div>
-    <p>Copyright Marc Intha-amnouay - 2018</p>
+    <p id="copyright">Copyright Marc Intha-amnouay - 2018</p>
   </div>
 </template>
 
@@ -24,16 +31,20 @@ export default {
   padding: 20px;
   height: 200px;
 
+  a {
+    color: white;
+    transition: all 0.25s ease;
+  }
+
+  a:hover {
+    color: rgba(17, 158, 239, 0.6);
+  }
+
   #message {
-    width: 40%;
+    flex-grow: 1;
 
-    a {
-      color: white;
-      transition: all 0.25s ease;
-    }
-
-    a:hover {
-      color: rgba(17, 158, 239, 0.6);
+    h3 {
+      width: 40%;
     }
   }
 
@@ -43,6 +54,19 @@ export default {
 
   h3 {
     font-size: 1.45em;
+  }
+
+  .footer-wrapper {
+    display: flex;
+
+    #github {
+      font-size: 4em;
+    }
+  }
+
+  #copyright {
+    text-align: center;
+    margin-bottom: 0px;
   }
 }
 </style>

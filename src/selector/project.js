@@ -6,13 +6,13 @@ import project from '../json/project.json'
  * @return {Object} project
  */
 const readAndParseJSON = () => {
-  if (typeof project === 'undefined') {
+  if (project === undefined) {
     return
   }
 
-  const projects = project.map((p, i) => {
+  const projects = project.map(p => {
     return {
-      id: i,
+      id: p.id,
       name: p.name,
       type: p.type,
       desc: p.description,
@@ -24,4 +24,23 @@ const readAndParseJSON = () => {
   return projects;
 }
 
+/**
+ * Get Project By Id
+ * 
+ * @param {Number} id
+ * @return {Object} project 
+ */
+const getProjectById = id => {
+  if (id === undefined) {
+    return []
+  }
+
+  const parsedId = parseInt(id)
+  const pj = project.filter(proj => proj.id === parsedId)
+
+  return pj[0]
+};
+
 export default readAndParseJSON
+
+export { getProjectById }

@@ -4,6 +4,7 @@
       class="project"
       v-for="project in projects"
       v-bind:key="project.id"
+      v-on:click="goToProject(project.id)"
     >
       <h3>{{project.name}}</h3>
       <p>{{project.desc}}</p>
@@ -28,6 +29,16 @@ export default {
   data: () => {
     return {
       projects: ProjectParser()
+    }
+  },
+  methods: {
+    /**
+     * Go To Project
+     * 
+     * @param {Number} id
+     */
+    goToProject(id) {
+      this.$router.push({ path: `/project/${id}` })
     }
   }
 }
