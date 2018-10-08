@@ -1,27 +1,31 @@
 <template>
   <div class="project-template">
-    <h2>{{project.name}}</h2>
-    <div v-bind:class="project.type">
-      <p>{{project.type}}</p>
+    <div id="project-type">
+      <h2>{{project.name}}</h2>
+      <div>
+        <p v-bind:class="project.type">{{project.type}}</p>
+      </div>
     </div>
     <div id="desc">
-      <h3>Description</h3>
-      <p>{{project.description}}</p>
+      <h2>Description</h2>
+      <p>{{project.deepDesc}}</p>
     </div>
     <div id="lang">
-      <h3>Languages</h3>
+      <h2>Languages</h2>
       <span
         v-for="lang in project.languages"
         v-bind:key="lang"
+        v-bind:class="lang"
       >
         {{lang}}
       </span>
     </div>
-    <div id="framework">
-      <h3>Framework</h3>
+    <div id="framework" v-if="project.misc">
+      <h2>Framework</h2>
       <span
-        v-for="f in project.framework"
+        v-for="f in project.misc"
         v-bind:key="f"
+        v-bind:class="f"
       >
         {{f}}
       </span>
@@ -52,12 +56,53 @@ export default {
 </script>
 
 <style lang="scss">
+  @import '../assets/scss/lang';
+  @import '../assets/scss/framework';
+
   .project-template {
     padding: 20px;
     color: #091123;
+    min-height: 100vh;
 
     h2 {
       font-weight: 500; 
     }
+
+    #project-type {
+      display: flex;
+      align-items: center;
+
+      div {
+        margin-left: 20px;
+
+        p {
+          padding: 5px;
+          color: white;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    #lang, #framework {
+      span {
+        padding: 5px;
+        border-radius: 10px;
+        color: white;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .personnal {
+    background-color: rgba(54, 133, 206, 0.849);
+  }
+
+  .school {
+    background-color: rgba(64, 54, 206, 0.849);
+  }
+
+  .work {
+    background-color: rgba(163, 54, 206, 0.849);
   }
 </style>
