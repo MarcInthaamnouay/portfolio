@@ -3,7 +3,7 @@
     <div class="animation">
       <Header />
     </div>
-    <div class="project-wrapper">
+    <div class="project-wrapper" id="project-content">
       <h2>Recent works</h2>
       <List />
     </div>
@@ -43,6 +43,7 @@ export default {
       padding-bottom: 10px;
       margin-bottom: 0px;
       font-weight: 500;
+      margin-top: 0px;
     }
   }
 </style>

@@ -62,7 +62,7 @@ export default {
 }
 
 .project:hover {
-  background-color: #f9f5efc9;
+  background-color: #e6e3dec9;
   cursor: pointer;
 }
 

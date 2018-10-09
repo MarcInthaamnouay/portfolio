@@ -12,7 +12,7 @@
 <script>
 import Navigation from './components/Navigation.vue'
 import Footer from './components/Footer.vue'
-import { mapState } from 'vuex'
+import { mapState } from 'vuex'
 
 export default {
   name: 'App',
@@ -62,11 +62,20 @@ export default {
 
       .project {
         background-color: rgb(50, 55, 65);
+
+        &:hover {
+          background-color: rgb(36, 39, 46);
+        }
       }
 
       .switch-button {
         color: white;
         border-color: white;
+
+        &:hover {
+          border-color: rgba(17, 158, 239, 0.3);
+          cursor: pointer;
+        }
       }
     }
   }

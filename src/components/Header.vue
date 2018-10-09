@@ -6,14 +6,23 @@
       <p>A Full Stack developer who love exploring new frontier.</p>
     </div>
     <div class="arrow">
-      <font-awesome-icon icon="angle-down" />
+      <font-awesome-icon
+        icon="angle-down"
+        v-on:click="goDown()"
+      />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'header'
+  name: 'top',
+  methods: {
+    goDown() {
+      const height = window.innerHeight
+      window.scrollTo(0, height)
+    }
+  }
 }
 </script>
 
@@ -45,10 +54,20 @@ export default {
       left: 0;
       right: 0;
       color: #091123;
+      animation: MoveUpDown 1s linear infinite;
 
       svg {
         font-size: 2em;
       }
+    }
+  }
+
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 20px;
     }
   }
 </style>
