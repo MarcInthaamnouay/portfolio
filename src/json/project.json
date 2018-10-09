@@ -4,15 +4,17 @@
     "name": "Lypuppies",
     "type": "personnal",
     "description": "A simple library which is code in C for nodeJS.",
-    "deepDesc": "A simple test library which was made to test how a library can work with NodeJS. Threw this project I looked for multiples way to interact with Node. Such binding can be made with the old NaN. However as NodeJS development team wanted to simplify the process they decided to switch to N-API. Therefore this project is using N-API",
+    "deepDesc": "A simple test library which was made to test how a library can work with NodeJS. Through this project I looked for multiples way to interact with Node. Such binding can be made with the old NaN. However as NodeJS development team wanted to simplify the process they decided to switch to N-API. Therefore this project is using N-API",
     "link": "https://github.com/MarcInthaamnouay/lypuppies",
     "languages": [
       "c",
       "js"
     ],
-    "framework": [
-      "node"
-    ]
+    "misc": [
+      "node",
+      "mocha"
+    ],
+    "img": "lypuppies.png"
   },
   {
     "id": 2,
@@ -23,7 +25,11 @@
     "link": "https://github.com/MarcInthaamnouay/lymui",
     "languages": [
       "c"
-    ]
+    ],
+    "misc": [
+      "cunit"
+    ],
+    "img": "lymui.png"
   },
   {
     "id": 3,
@@ -40,7 +46,8 @@
       "realm",
       "dagger",
       "native"
-    ]
+    ],
+    "img": "yourname.png"
   },
   {
     "id": 4,
@@ -55,7 +62,8 @@
     "misc": [
       "react",
       "redux"
-    ]
+    ],
+    "img": "store.png"
   },
   {
     "id": 5,
@@ -67,6 +75,7 @@
     "languages": [
       "js",
       "markdown"
-    ]
+    ],
+    "img": "markdown.png"
   }
 ]
