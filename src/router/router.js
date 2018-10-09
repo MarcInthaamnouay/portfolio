@@ -1,13 +1,11 @@
 import VueRouter from 'vue-router'
 
 // template
-import About from '@/pages/About.vue'
 import Project from '@/pages/Project.vue'
 import Home from '@/pages/Home.vue'
 import Notfound from '@/pages/Notfound.vue'
 
 const routes = [
-  { path: '/about', component: About },
   {
     path: '/project/:id',
     component: Project,

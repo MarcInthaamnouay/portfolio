@@ -31,6 +31,10 @@ export default {
   padding: 20px;
   height: 200px;
 
+  p, h3 {
+    color: white;
+  }
+
   a {
     color: white;
     transition: all 0.25s ease;

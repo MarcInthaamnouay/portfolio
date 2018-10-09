@@ -51,7 +51,6 @@ export default {
 
 .project {
   width: 30.8%;
-  background-color: #f9f5ef;
   min-height: 180px;
   border-radius: 10px;
   margin-left: 5px;
@@ -59,7 +58,6 @@ export default {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
-  color: #091123;
   transition: .25s ease;
 }
 
@@ -85,7 +83,6 @@ export default {
 
     p {
       margin: 5px;
-      color: white;
     }
   }
 

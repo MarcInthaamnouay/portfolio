@@ -26,7 +26,6 @@ export default {
 <style lang="scss">
   body {
     font-family: 'Raleway', sans-serif;
-    background-color: #d5ebf7;
     color: white;
   }
 
@@ -35,8 +34,7 @@ export default {
   }
 
   .project-wrapper {
-    background-color: #91c6e4;
-    height: 100vh;
+    min-height: 100vh;
 
     h2 {
       padding-left: 20px;
@@ -44,7 +42,6 @@ export default {
       padding-top: 20px;
       padding-bottom: 10px;
       margin-bottom: 0px;
-      color: #091123;
       font-weight: 500;
     }
   }

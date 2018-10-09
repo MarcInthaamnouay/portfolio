@@ -3,13 +3,25 @@
     <div class="name">
       <router-link to="/">intha-amnouay marc</router-link>
     </div>
-    <router-link to="/about">About</router-link>
+    <button
+      class="switch-button"
+      v-on:click="toggleDark()"
+    >
+      Dark
+    </button>
   </div>
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
-  name: 'navigation'
+  name: 'navigation',
+  methods: {
+    ...mapActions([
+      'toggleDark'
+    ])
+  }
 }
 </script>
 
@@ -46,11 +58,24 @@ export default {
     }
 
     a {
-      color: #091123;
       font-weight: 500;
       text-decoration: none;
       font-size: 1.15em;
       letter-spacing: 1px;
     }
+  }
+
+  button {
+    width: 60px;
+    background-color: transparent;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all ease .25s;
+  }
+
+  button:hover {
+    border-color: rgba(17, 158, 239, 0.3);
+    cursor: pointer;
   }
 </style>

@@ -69,7 +69,6 @@ export default {
 
   .project-template {
     padding: 20px;
-    color: #091123;
     min-height: 100vh;
 
     h2 {
@@ -98,12 +97,6 @@ export default {
         color: white;
         margin-left: 5px;
         margin-right: 5px;
-      }
-    }
-
-    #link {
-      a {
-        color: #091123;
       }
     }
   }

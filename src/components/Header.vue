@@ -27,7 +27,6 @@ export default {
       padding-top: 15%;
 
       p {
-        color: #091123;
         font-size: 1.85em;
         margin-bottom: 0px;
         margin-top: 0px;

@@ -23,7 +23,6 @@ export default {
 
     p {
       text-align: center;
-      color: #091123;
       font-size: 1.5em;
     }
   }
