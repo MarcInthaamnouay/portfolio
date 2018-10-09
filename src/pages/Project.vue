@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import { getProjectById } from '@/selector/project'
+import { getProjectById } from '@/selector/project'
 
 export default {
   name: 'project',
@@ -55,14 +55,6 @@ export default {
       project,
       image: require(`../assets/img/${project.img}`)
     }
-  },
-  mounted: function() {
-    this.$nextTick(function() {
-      const id = parseInt(this.$route.params.id)
-      if (typeof id !== 'number') {
-        console.warn('redirect')
-      }
-    })
   }
 }
 </script>

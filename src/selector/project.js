@@ -31,8 +31,8 @@ const readAndParseJSON = () => {
  * @return {Object} project 
  */
 const getProjectById = id => {
-  if (id === undefined) {
-    return []
+  if (id > project.length) {
+    return project[0]
   }
 
   const parsedId = parseInt(id)

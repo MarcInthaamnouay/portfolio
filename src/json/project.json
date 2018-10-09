@@ -21,7 +21,7 @@
     "name": "Lymui",
     "type": "personnal",
     "description": "A C library which can help you to convert a type of color to an other.",
-    "deepDesc": "A previous coworker I talked with was doing some project in C. As someone who was much more into web programming and so dynamic languages the coworker gave me the motivation to make a project in C. This allow me to understand much more how thing got done under the hood (of course not like assembly)",
+    "deepDesc": "A previous coworker I talked with was doing some project in C. As someone who was much more into web programming and so dynamic languages the coworker gave me the motivation to make a project in C. This allow me to understand much more how thing got done under the hood (of course not like assembly). In the next coming months the Lib will be make compatible with NodeJS",
     "link": "https://github.com/MarcInthaamnouay/lymui",
     "languages": [
       "c"
