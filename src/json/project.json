@@ -1,59 +1,81 @@
 [
   {
+    "id": 1,
     "name": "Lypuppies",
     "type": "personnal",
     "description": "A simple library which is code in C for nodeJS.",
+    "deepDesc": "A simple test library which was made to test how a library can work with NodeJS. Through this project I looked for multiples way to interact with Node. Such binding can be made with the old NaN. However as NodeJS development team wanted to simplify the process they decided to switch to N-API. Therefore this project is using N-API",
     "link": "https://github.com/MarcInthaamnouay/lypuppies",
     "languages": [
       "c",
       "js"
-    ]
+    ],
+    "misc": [
+      "node",
+      "mocha"
+    ],
+    "img": "lypuppies.png"
   },
   {
+    "id": 2,
     "name": "Lymui",
     "type": "personnal",
     "description": "A C library which can help you to convert a type of color to an other.",
+    "deepDesc": "A previous coworker I talked with was doing some project in C. As someone who was much more into web programming and so dynamic languages the coworker gave me the motivation to make a project in C. This allow me to understand much more how thing got done under the hood (of course not like assembly). In the next coming months the Lib will be make compatible with NodeJS",
     "link": "https://github.com/MarcInthaamnouay/lymui",
     "languages": [
       "c"
-    ]
-  },
-  {
-    "name": "Your Name",
-    "type": "school",
-    "description": "Developping a full tv series android application that can be used online as well as offline.",
-    "link": "https://github.com/Tinwork/YourName",
-    "languages": [
-      "java"
     ],
     "misc": [
-      "android",
-      "realm",
-      "dagger"
-    ]
+      "cunit"
+    ],
+    "img": "lymui.png"
   },
   {
+    "id": 3,
+    "name": "Your Name",
+    "type": "school",
+    "description": "Developping a tv series consulting Android app that can be used either online or offline.",
+    "deepDesc": "This project was a subject given by our teacher. Make an app where you will fetch data from the TVDB api's. Functionnality wise we would need to implement a login / logout feature, see series description either online or offline as well as saving favorite series. The offline implementation was really interesting. Indeed we tried to mimic the instagram's way of updating the datas",
+    "link": "https://github.com/Tinwork/YourName",
+    "languages": [
+      "java",
+      "android"
+    ],
+    "misc": [
+      "realm",
+      "dagger",
+      "native"
+    ],
+    "img": "yourname.png"
+  },
+  {
+    "id": 4,
     "name": "Store locator",
     "type": "school",
     "description": "A simple react app using redux to get the information of the store present within a magento store",
+    "deepDesc": "Orginally this school project was more on the PHP side. However as I needed to train at using the React library my group project decided that it can be a good idea to make a side react project which was worth",
     "link": "https://github.com/Tinwork/storeLocatorFront",
     "languages": [
       "js"
     ],
     "misc": [
-      "js",
       "react",
       "redux"
-    ]
+    ],
+    "img": "store.png"
   },
   {
+    "id": 5,
     "name": "JS articles",
     "type": "work",
     "description": "Articles regarding the JavaScript language writen for helping to understand the language in depth",
+    "deepDesc": "When I got my new job as a part time student my mentor suggests me to learn JavaScript by making a series of articles that would help me and other people at learning the JavaScript language. These articles talk about prototype, delegation and so on..",
     "link": "https://github.com/MarcInthaamnouay/Explaining-JS",
     "languages": [
       "js",
       "markdown"
-    ]
+    ],
+    "img": "markdown.png"
   }
 ]
